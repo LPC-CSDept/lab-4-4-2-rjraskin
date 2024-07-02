@@ -5,6 +5,16 @@ def main():
     ########################################
     """
 
+    while True:
+        try:
+            number = int(input('Enter a number '))
+        except ValueError:
+            print ('Input must be numeric')
+            continue
+        else:
+            print (number)
+            break
+
     ########################################
     # Do not delete the return statement
     ########################################
